@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <Container className="flex h-16 items-center justify-between">
+        <Container size="xl" className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2 transition-all duration-200 hover:opacity-90">
               <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary/10 transition-transform duration-300 hover:scale-105">
@@ -50,7 +50,7 @@ export default function Home() {
       </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 overflow-hidden">
-          <Container size="large">
+          <Container size="xl">
             <motion.div
               className="grid gap-8 md:gap-12 lg:gap-16 lg:grid-cols-2 items-center"
               variants={container}
@@ -134,7 +134,7 @@ export default function Home() {
         </section>
 
         <section className="w-full py-12 md:py-24 bg-muted/50">
-          <Container size="large">
+          <Container size="xl">
             <motion.div
               className="flex flex-col items-center justify-center space-y-4 text-center"
               initial={{ opacity: 0, y: 20 }}
@@ -203,7 +203,7 @@ export default function Home() {
         </section>
 
         <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-b from-background to-muted/30">
-          <Container>
+          <Container size="xl">
             <motion.div
               className="flex flex-col items-center justify-center space-y-6 text-center"
               initial={{ opacity: 0, y: 20 }}
@@ -228,7 +228,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="border-t py-8">
-        <Container>
+        <Container size="xl">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <div className="flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-primary" />

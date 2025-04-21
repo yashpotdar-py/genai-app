@@ -23,7 +23,7 @@ export default function DashboardLayout({
           transition={{ duration: 0.3 }}
         >
           <div className="h-full pb-8">
-            <Container size="large" className="h-full pt-6 md:pt-8 lg:pt-10">
+            <Container size="xl" className="h-full pt-6 md:pt-8 lg:pt-10">
               {children}
             </Container>
           </div>

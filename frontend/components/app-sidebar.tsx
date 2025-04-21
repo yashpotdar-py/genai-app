@@ -28,6 +28,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function AppSidebar() {
   const pathname = usePathname()
@@ -180,6 +181,21 @@ export function AppSidebar() {
         </SidebarContent>
         <SidebarFooter>
           <SidebarSeparator className="my-2" />
+          
+          <div className="p-2 flex items-center justify-between">
+            <div className="text-xs font-medium text-sidebar-foreground/70 px-2">Theme</div>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <div><ThemeToggle /></div>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Toggle theme</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </div>
+          
           <div className="p-4">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
