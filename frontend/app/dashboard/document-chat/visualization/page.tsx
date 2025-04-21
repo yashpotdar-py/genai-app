@@ -25,6 +25,7 @@ import {
   ResponsiveContainer,
 } from "recharts"
 
+// TODO : Add actual working API
 // Mock data for charts
 const mockBarData = [
   { name: "Jan", value: 400 },

@@ -25,7 +25,7 @@ export default function DocumentChatPage() {
   return (
     <div className="space-y-8">
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-        <h1 className="text-4xl font-bold tracking-tight gradient-text">Document Chat</h1>
+        <h1 className="text-4xl font-bold tracking-tight gradient-text">OCR Chat</h1>
         <p className="text-muted-foreground mt-2">Choose an option below to start chatting with your data.</p>
       </motion.div>
 
@@ -36,7 +36,7 @@ export default function DocumentChatPage() {
               <div className="feature-icon mb-2">
                 <FileText className="h-6 w-6" />
               </div>
-              <CardTitle>Chat with Document</CardTitle>
+              <CardTitle>Chat with OCR</CardTitle>
               <CardDescription>Upload and chat with any document</CardDescription>
             </CardHeader>
             <CardContent>

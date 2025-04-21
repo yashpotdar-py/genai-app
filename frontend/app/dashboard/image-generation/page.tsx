@@ -56,6 +56,7 @@ export default function ImageGenerationPage() {
         clearInterval(timer)
 
         // Generate placeholder images
+        // TODO : Add actual working API
         const images = Array.from({ length: numImages }).map(
           (_, i) => `/placeholder.svg?height=512&width=512&text=Generated+Image+${i + 1}`,
         )

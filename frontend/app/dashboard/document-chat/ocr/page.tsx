@@ -54,6 +54,7 @@ export default function OCRChatPage() {
       setUploadProgress(100)
 
       // Mock extracted text
+      // TODO : Add actual working API
       const mockExtractedText =
         "This is a sample extracted text from the document. It would contain the actual content of your uploaded document after OCR processing. You can now ask questions about this content."
       setExtractedText(mockExtractedText)

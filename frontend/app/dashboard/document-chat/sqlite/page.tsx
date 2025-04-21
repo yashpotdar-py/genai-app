@@ -54,6 +54,7 @@ export default function SQLiteChatPage() {
       setUploadProgress(100)
 
       // Mock database info
+      // TODO : Add actual working API
       const mockDatabaseInfo =
         "Database contains the following tables:\n- users (id, name, email, created_at)\n- products (id, name, price, category_id)\n- categories (id, name)\n- orders (id, user_id, total, status, created_at)"
       setDatabaseInfo(mockDatabaseInfo)
